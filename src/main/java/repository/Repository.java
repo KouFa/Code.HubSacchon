@@ -39,7 +39,7 @@ public abstract class Repository<T, K> {
             return null;
         }
     }
-
+//fix paging -mine
     public List<T> findAll() {
         try {
             return entityManager.createQuery("from " + getClassName()).getResultList();

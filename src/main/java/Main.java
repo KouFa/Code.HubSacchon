@@ -22,12 +22,12 @@ public class Main extends Application {
         LOGGER.info("Sacchon app starting");
         em.close();
         Component c = new Component();
-        c.getServers().add(Protocol.HTTP, 9000);
+        c.getServers().add(Protocol.HTTP, 5000);
         c.getDefaultHost().attach("/v1", new Main());
         c.start();
 
         LOGGER.info("sample web api started");
-        LOGGER.info("URl: http://localhost:9000/v1/ping");
+        LOGGER.info("URl: http://localhost:5000/v1/ping");
 
 
     }
