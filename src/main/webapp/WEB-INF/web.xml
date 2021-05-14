@@ -14,6 +14,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>RestletServlet</servlet-name>
-        <url-pattern>/service/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
