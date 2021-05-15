@@ -23,7 +23,7 @@ public class DoctorRepresentation {
             name = doctor.getName();
             address = doctor.getAddress();
             email = doctor.getEmail();
-            uri = "http://localhost:9000/v1/doctor/" + doctor.getId();
+            uri = "http://localhost:5000/v1/doctor/" + doctor.getId();
         }
 
     }

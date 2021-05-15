@@ -26,7 +26,7 @@ public class GlucoseRepresentation {
             if(glucose.getPatient()!=null){
                 patientId= glucose.getPatient().getId();
             }
-            uri =  "http://localhost:9000/v1/glucose/" + glucose.getId();
+            uri =  "http://localhost:5000/v1/glucose/" + glucose.getId();
         }
 
     }

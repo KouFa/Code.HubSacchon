@@ -31,7 +31,7 @@ public class CarbRepresentation {
                 patientId = carb.getPatient().getId();
             }
 
-            uri = "http://localhost:9000/v1/carb/" + carb.getId();
+            uri = "http://localhost:5000/v1/carb/" + carb.getId();
         }
 
     }

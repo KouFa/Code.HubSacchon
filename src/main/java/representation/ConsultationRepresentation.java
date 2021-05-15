@@ -36,7 +36,7 @@ public class ConsultationRepresentation {
             if (consultation.getDoctor() != null) {
                 doctorId = consultation.getDoctor().getId();
             }
-            uri = "http://localhost:9000/v1/consultation/" + consultation.getId();
+            uri = "http://localhost:5000/v1/consultation/" + consultation.getId();
         }
 
     }

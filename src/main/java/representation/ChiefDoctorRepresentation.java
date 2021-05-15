@@ -23,7 +23,7 @@ public class ChiefDoctorRepresentation {
             name = chiefDoctor.getName();
             address = chiefDoctor.getAddress();
             email = chiefDoctor.getEmail();
-            uri = "http://localhost:9000/v1/chiefDoctor/" + chiefDoctor.getId();
+            uri = "http://localhost:5000/v1/chiefDoctor/" + chiefDoctor.getId();
         }
 
     }
