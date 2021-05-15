@@ -37,29 +37,29 @@ public class CustomRouter {
         //Patient
         router.attach("/patientSettings/{id}", PatientSettingsResource.class);
         router.attach("/patient/{patientId}/carb/{carbId}", PatientCarbResource.class);
-        router.attach("/patient/{patientId}/carb/", PatientCarbListResource.class);
+        router.attach("/patient/{patientId}/carb", PatientCarbListResource.class);
         router.attach("/patient/{patientId}/glucose/{glucoseId}", PatientGlucoseResource.class);
-        router.attach("/patient/{patientId}/glucose/", PatientGlucoseListResource.class);
+        router.attach("/patient/{patientId}/glucose", PatientGlucoseListResource.class);
         router.attach("/patient/{patientId}/consultation/{consultationId}", PatientConsultationResource.class);
-        router.attach("/patient/{patientId}/consultation/", PatientConsultationListResource.class);
+        router.attach("/patient/{patientId}/consultation", PatientConsultationListResource.class);
         router.attach("/patientCarbDailyAverage/{patientId}", PatientCarbDailyAverageResource.class); //get
         router.attach("/patientCarbAverage/{patientId}", PatientCarbAverageResource.class);
         router.attach("/patientGlucoseAverage/{patientId}", PatientGlucoseAverageResource.class); //get
 
 
         //Doctor
-        router.attach("/doctor/{doctorId}/patient/", DoctorPatientListResource.class);
+        router.attach("/doctor/{doctorId}/patient", DoctorPatientListResource.class);
         router.attach("/doctor/{doctorId}/patient/{patientId}", DoctorPatientResource.class);
-        router.attach("/doctor/{patientId}/carb/", DoctorPatientCarbListResource.class);
-        router.attach("/doctor/{patientId}/glucose/", DoctorPatientGlucoseListResource.class);
-        router.attach("/doctorPatient/{patientId}/consultation/", DoctorPatientConsultationListResource.class);
+        router.attach("/doctor/{patientId}/carb", DoctorPatientCarbListResource.class);
+        router.attach("/doctor/{patientId}/glucose", DoctorPatientGlucoseListResource.class);
+        router.attach("/doctorPatient/{patientId}/consultation", DoctorPatientConsultationListResource.class);
         router.attach("/doctorPatient/{patientId}/consultation/{consultationId}", DoctorPatientConsultationResource.class);
 
-        router.attach("/doctor/{doctorId}/unconsultedPatients/", DoctorUnconsultedPatientListResource.class);//
+        router.attach("/doctor/{doctorId}/unconsultedPatients", DoctorUnconsultedPatientListResource.class);//
         router.attach("/doctor/{doctorId}/unconsultedPatient/{unconsultedPatientId}", DoctorUnconsultedPatientResource.class);//
-        router.attach("/doctor/{doctorId}/needConsultationPatients/", DoctorNeedConsultationPatientListResource.class);//
+        router.attach("/doctor/{doctorId}/needConsultationPatients", DoctorNeedConsultationPatientListResource.class);//
         router.attach("/doctor/{doctorId}/needConsultationPatient/{needConsultationPatientId}", DoctorNeedConsultationPatientResource.class);//
-        router.attach("/doctor/{doctorId}/consultation/", DoctorConsultationListResource.class);// put
+        router.attach("/doctor/{doctorId}/consultation", DoctorConsultationListResource.class);// put
         router.attach("/doctor/{doctorId}/consultation/{consultationId}", DoctorConsultationResource.class);
 
 
@@ -79,8 +79,8 @@ public class CustomRouter {
         router.attach("/reportPatientCarb/{patientId}", ReportPatientCarbListResource.class); //get
         router.attach("/reportPatientGlucose/{patientId}", ReportPatientGlucoseListResource.class); //get
         router.attach("/reportDoctorConsultation/{doctorId}", ReportDoctorConsultationListResource.class);
-        router.attach("/reportUnconsultedPatient/", ReportUnconsultedPatientListResource.class);//get more than a month
-        router.attach("/reportUnconsultedPatientDiff/", ReportUnconsultedPatientDiffListResource.class);
+        router.attach("/reportUnconsultedPatient", ReportUnconsultedPatientListResource.class);//get more than a month
+        router.attach("/reportUnconsultedPatientDiff", ReportUnconsultedPatientDiffListResource.class);
         router.attach("/patientInactive", PatientInactiveListResource.class);
         router.attach("/doctorInactive", DoctorInactiveListResource.class);
 
