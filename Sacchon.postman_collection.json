@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "346a8fef-a78d-4026-97c6-8984bda161b2",
+		"name": "Sacchon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterAWS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"username\": \"username5\",\r\n\"password\":\"password5\",\r\n\"name\":\"name5\",\r\n\"email\":\"email5\",\r\n\"address\":\"address5\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://javatest-env.eba-gidbdmuv.eu-central-1.elasticbeanstalk.com//v1/register",
+					"protocol": "http",
+					"host": [
+						"javatest-env",
+						"eba-gidbdmuv",
+						"eu-central-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chiefDoctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\":\"chief\",\r\n\"password\":\"3333\",\r\n\"name\":\"Dr Bourla\",\r\n\"address\":\"USA\",\r\n\"email\":\"chief@pfizer\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v1/chiefDoctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"chiefDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record Glucose",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/v1/patient/1/glucose/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"patient",
+						"1",
+						"glucose",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDoctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/chiefDoctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"chiefDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient - Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v1/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping LB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://sacchon-lb-847272507.eu-central-1.elb.amazonaws.com/v1/ping",
+					"protocol": "http",
+					"host": [
+						"sacchon-lb-847272507",
+						"eu-central-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPatientsAsChief",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "chief",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "chief",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://sacchon.eu-central-1.elasticbeanstalk.com/v1/patient",
+					"protocol": "http",
+					"host": [
+						"sacchon",
+						"eu-central-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"v1",
+						"patient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
