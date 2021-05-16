@@ -16,5 +16,6 @@ released. The requirements are given by the Sacchon Consulting Enterprise
 The API URLs:
 
 1st Approach -> http://sacchon-lb-847272507.eu-central-1.elb.amazonaws.com/v1/ping
+
 2nd Approach -> http://sacchon.eu-central-1.elasticbeanstalk.com/v1/ping
  
