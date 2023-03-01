@@ -1,5 +1,5 @@
 
-## Code.Hub | Pfizer - Software & Cloud Engineering Bootcamp
+## Code.Hub | Software & Cloud Engineering Bootcamp
  
   
 #Sacchon 
